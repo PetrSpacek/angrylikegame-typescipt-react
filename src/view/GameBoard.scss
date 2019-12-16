@@ -1,0 +1,20 @@
+.board {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+
+  background-color: gray;
+  overflow: hidden;
+}
+
+.canvas {
+  position: relative;
+  flex-grow: 1;
+  height: 100%;
+}

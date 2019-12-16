@@ -1,0 +1,162 @@
+$color-text: #EEEEEE;
+$color-background: #555555;
+$font-headline: 'Londrina Solid', cursive;
+$font-text: 'Montserrat', sans-serif;
+
+.toolbar {
+  height: 100%;
+  width: 290px;
+  box-shadow: 0px 0px 10px black;
+  background: $color-background;
+  padding: 20px;
+  font-family: $font-text;
+}
+
+.toolbar__title {
+  margin: 20px 0 40px;
+  font-family: $font-headline;
+  font-size: 70px;
+  color: $color-text;
+  text-shadow: 0 0 10px black;
+  text-transform: uppercase;
+}
+
+.toolbar__box {
+  position: relative;
+  width: 100%;
+  border: 2px solid $color-text;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.toolbar__box-headline {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0 5px;
+  line-height: 1;
+
+  color: $color-text;
+  background: $color-background;
+  font-family: $font-headline;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.toolbar__info-line {
+  color: $color-text;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.toolbar__info-line--strong {
+  font-weight: 700;
+}
+
+.toolbar__settings-line {
+  display: flex;
+  justify-content: center;
+  color: $color-text;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.toolbar__settings-line--strong {
+  font-weight: 700;
+  width: 37%
+}
+
+.toolbar__settings-line--value {
+  width: 50px;
+  text-align: center;
+}
+
+.toolbar__settings-button {
+  position: relative;
+  background-color: transparent;
+  border: 1px solid $color-text;
+  color: $color-text;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 5px;
+  height: 20px;
+  line-height: 1;
+  width: 20px;
+
+  &:after {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background: $color-text;
+    color: $color-background;
+  }
+}
+
+.toolbar__settings-button--plus {
+  &:after{
+    content: "+";
+  }
+}
+
+.toolbar__settings-button--minus {
+  &:after{
+    content: "-";
+  }
+}
+
+.toolbar__settings-select {
+  margin: 0;
+  width: calc(50% - 1px);
+  height: 30px;
+  line-height: 30px;
+  background-color: transparent;
+  border: 1px solid $color-text;
+  color: $color-text;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+
+  &:hover {
+    background: $color-text;
+    color: $color-background;
+  }
+}
+
+.toolbar__settings-select--left {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: 1px;
+}
+
+.toolbar__settings-select--right {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: 1px;
+}
+
+.toolbar__settings-select--active {
+  background: $color-text;
+  color: $color-background;
+}
+
+.toolbar__help-line {
+  margin: 5px 0;
+  color: $color-text;
+  font-size: 12px;
+}
+
+.toolbar__help-line--strong {
+  font-weight: bold;
+}
+
+.toolbar__help-line--big {
+  font-size: 16px;
+}
